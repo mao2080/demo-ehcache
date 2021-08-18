@@ -2,26 +2,22 @@ package com.demo.ehcache.controller;
 
 import com.demo.ehcache.beans.ResObj;
 import com.demo.ehcache.service.EhcacheService;
-import org.apache.http.HttpStatus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cache.CacheManager;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
-
-import javax.annotation.Resource;
 
 /**
  * @author mao2080@sina.com
  */
 @RestController
 @RequestMapping("/ehcachetroller")
-public class DemoController {
+public class EhcacheController {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(DemoController.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(EhcacheController.class);
 
     private static final String CACHE_NAME = "ehcache-demo";
 
