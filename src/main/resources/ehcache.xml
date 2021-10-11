@@ -17,7 +17,7 @@
         <persistence strategy="localTempSwap"/>
     </defaultCache>
 
-    <cache name="platformCache"
+    <cache name="ehcache-demo"
            maxElementsInMemory="1000"
            eternal="false"
            timeToIdleSeconds="7200"
